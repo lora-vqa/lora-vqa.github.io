@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoRA: A Logical Reasoning Augmented Dataset for Visual Question Answering</title>
+    <link rel="icon" href="img/head_icon.png" type="image/icon type">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div id="icon">
+            <img src="img/head_icon.png" id="nav-icon">
+            LoRA
+        </div>
+        <div>
+            <a class="nav-button" href="#home">Home</a>
+            <a class="nav-button" href="#dataset">Dataset</a>
+            <a class="nav-button" href="#method">Method</a>
+            <a class="nav-button" href="#paper">Paper</a>
+            <a class="nav-button" href="#code">Code</a>
+            <a class="nav-button" href="#download">Download</a>
+            <a class="nav-button" href="#citation">Citation</a>
+            <a class="nav-button" href="#authors">Authors</a>
+        </div>
+    </div>
+
+
+    <div id="home" style="position: absolute; top: 0;"></div>
+
+    <div id="title">
+        <div id="title-wrapper">
+            <p id="title-text">LoRA</p>
+        </div>
+        <p id="subtitle-text">
+            A Logical Reasoning Augmented Dataset <br>
+            for Visual Question Answering
+            <br><br>
+            NeurIPS 2023
+        </p>
+        <p id="title-padding-bottom">&nbsp;</p>
+    </div>
+
+    <!-- the main body of the page -->
+    <!-- each section uses an empty div as an anchor -->
+    <div id="body">
+        <div class="section">
+            <div id="about" class="anchor"></div>
+            <h1>About LoRA</h1>
+            <figure><img src="img/Fullimage.png" alt="kitchen scene">
+                <figcaption>
+                    Q: If we do not have milk, is there another dairy product that does not necessarily contain fat but
+                    is
+                    rich in protein that can be substituted for breakfast? A:Yoghurt
+                </figcaption>
+                <figcaption>
+                    Q: Can we use the food between eggs and bread to make a meal for vegetarians? A: No
+                </figcaption>
+            </figure>
+
+            <p>
+                Can you answer the logical questions based on the following image: "If we don't have milk, is there
+                another dairy product that doesn't necessarily contain fat but is rich in protein and can be substituted
+                for breakfast?" and "Is there a food in the image that is cut into a slice and is not dairy?"
+            </p>
+            <p>
+                Logical reasoning is a hallmark of human cognition. Humans excel at integrating multimodal information
+                for logical reasoning, as exemplified by the Visual Question Answering (VQA) task, which is a
+                challenging
+                multimodal task. Large vision-and-language models aim to tackle such reasoning problems, but evaluating
+                the accuracy,
+                consistency, and fabrication of the generated answers is challenging. To address this gap, we introduce
+                LoRA, a novel
+                Logical Reasoning Augmented VQA dataset to challenge the complex logical reasoning abilities of VQA and
+                large
+                vision-and-language models.
+
+                All the realistic images like the one below and logical questions in LoRA are automatically generated
+                using our algorithms.
+            </p>
+
+        </div>
+
+        <div class="section">
+            <div id="dataset" class="anchor"></div>
+            <h1>LoRA Dataset</h1>
+            <ul>
+                <li>
+                    LoRA is a Logic Reasoning Augmented VQA Dataset.
+                </li>
+                <li>
+                    Based on the formal Description Logic.
+                </li>
+                <li>
+                    100,000 automated generated realistic kitchen scenes.
+                </li>
+                <li>
+                    200,000 sophisticated and diverse logical reasoning questions.
+                </li>
+            </ul>
+            <figure>
+                <img src="img/complexity_table.png" alt="kitchen scene">
+                <figcaption>
+                    Nine foundational Description Logical reasoning categories utilised in the dataset.
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="section">
+            <div id="method" class="anchor"></div>
+            <h1>LoRA Dataset Construction Pipeline
+            </h1>
+            <p>
+                LoRA is built with the following process:
+            </p>
+
+            <figure>
+                <img src="img/lora_pipeline.png" style="width: 100%" alt="pipeline" />
+            </figure>
+            <p>
+
+            </p>
+        </div>
+
+        <div class="section">
+            <div id="paper" class="anchor"></div>
+            <h1>Paper</h1>
+            <p>
+                <papername>
+                    LoRA: A Logical Reasoning Augmented Dataset for Visual Question Answering
+                </papername><br>
+                Jingying Gao, Qi Wu, Alan Blair, Maurice Pagnucco<br>
+                The 37th Conference on Neural Information Processing Systems (NeurIPS), 2023<br>
+                <a href="https://openreview.net/pdf?id=bW1uwPV3im" class="ext-link" target="blank">Paper</a> /
+                <a href="https://github.com/CarolineGao/LoRA-Dataset" class="ext-link" target="blank">Code</a>
+            </p>
+        </div>
+
+        <div class="section">
+            <div id="code" class="anchor"></div>
+            <h1>Code</h1>
+            <p>
+                View on the <a href="https://github.com/CarolineGao/LoRA-Dataset" class="ext-link" target="blank">github
+                    repository</a>.
+            </p>
+        </div>
+
+        <div class="section">
+            <div id="download" class="anchor"></div>
+            <h1>Download</h1>
+            <p>
+                You can download our dataset from
+                <a href="https://drive.google.com/drive/folders/1H4msZ4ae1msEDApxOT7cr1A1QwQ33Pkn" class="ext-link">
+                    Google drive
+                </a>
+                , or check out our
+                <a href="https://github.com/CarolineGao/LoRA-Dataset" class="ext-link" target="blank">github
+                    repository</a>.
+            </p>
+        </div>
+
+        <div class="section">
+            <div id="citation" class="anchor"></div>
+            <h1>Citation</h1>
+            <p>
+                If you wish to cite our work:
+            </p>
+            <pre class="bibtax">@inproceedings{
+    gao2023lora,
+    title={LoRA: A Logical Reasoning Augmented Dataset for Visual Question Answering},
+    author={Gao, Jingying and Wu, Qi and Blair, Alan and Pagnucco, Maurice},
+    booktitle={Thirty-seventh Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+    year={2023}
+    }
+            </pre>
+        </div>
+
+        <div class="section" id="authors" style="align-content: center">
+            <h1>Authors</h1>
+            <div style="text-align: center; width: 100%; padding-top: 1em;">
+                <img class="profile-img" src="./img/unsw.png" style="margin: 32px;">
+                <img class="profile-img" src="./img/uni_adelaide.jpg" style="margin: 32px;margin-bottom: 40px;">
+
+            </div>
+
+            <div style="text-align:center; display: inline-block; width: 100%; margin-top: 0">
+                <div class="profile">
+                    <p>Jingying Gao</p>
+                    <p>Qi Wu</p>
+                    <p>Alan Blair</p>
+                    <p>Maurice Pagnucco</p>
+                </div>
+                <p>
+                    University of New South Wales &nbsp;&nbsp;&nbsp;
+                    University of Adelaide
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer" style="font-size: 12pt">
+        © 2023
+    </div>
+</body>
+
+</html>
